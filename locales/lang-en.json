@@ -1,0 +1,57 @@
+{
+    "titles": {
+      "aboutMe": "About Me",
+      "myProjects": "My Projects",
+      "contactMe": "Contact Me"
+    },
+    "hero": {
+      "greeting": "Hello, I'm",
+      "profession": "Backend Web Developer",
+      "intro": "Java Developer. I am looking to focus primarily on backend development using technologies such as <strong>Java</strong>, <strong>Spring Framework / Spring Boot</strong>, <strong>MySQL</strong>, and <strong>Git</strong>, among others related to software development.",
+      "learnMore": "Learn More"
+    },
+    "aboutMe": {
+      "intro": "My name is Alejandro Damián Dip, I am from Argentina. I specialize in <strong>backend web development</strong> using primarily Java ecosystem technologies such as:",
+      "tools": "Tools like Git and databases like MySQL. I also have some experience with frontend technologies such as HTML, CSS, and JavaScript.",
+      "bestPractices": "Always striving to follow good development practices and apply principles such as <em>SOLID</em>, <em>DRY</em>, and design patterns like <em>MVC</em>."
+    },
+    "myProjects": {
+      "projects": [
+        {
+          "description": "Informative website for a Chinese martial arts school. The purpose of this project was to provide a way to showcase the school's history and philosophy, as well as visual content (images and videos) that display the activities the institution offers and performs. It also presents means to communicate and obtain information about classes. All this presented in a simple manner for interested users.",
+          "startDate": "Mar 2022",
+          "endDate": "May 2022",
+          "status": "Deployed. Continues to receive updates"
+        },
+        {
+          "description": "Website providing information about the exchange rate in Argentine pesos ($ARS) for the main types of dollars available in Argentina. This is achieved by consuming information provided by an API and displaying it in an HTML view.",
+          "startDate": "Aug 2024",
+          "endDate": "Aug 2024",
+          "status": "Deployed"
+        },
+        {
+          "period": "Jul 2024 - Still in development",
+          "description": "Web application that allows for the registration, modification, and deletion of products and suppliers in a database. It also allows for importing information from <kbd>.csv</kbd> and <kbd>.xlsx</kbd> files, and exporting information to <em>PDF</em> and <em>Excel</em> documents.",
+          "startDate": "Jul 2024",
+          "endDate": "-",
+          "status": "Still in development"
+        },
+        {
+          "description": "API that provides CRUD operations to facilitate the management of information about students, teachers, and dojos of a Chinese martial arts school. In addition, a web client interacts with the API in a user-friendly way, allowing users to register and access the system to consult, add, modify, and delete information based on their user role.",
+          "startDate": "Aug 2024",
+          "endDate": "-",
+          "status": "Still in development"
+        }
+      ]
+    },
+    "contactMe": {
+      "intro": "Send Me an Email",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "sendMessage": "Send Message"
+      }
+    }
+  }
+  

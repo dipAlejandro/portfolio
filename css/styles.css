@@ -1,0 +1,88 @@
+/* Color de fondo primario */
+.my-bg-primary {
+    background-color: #22007C; /* Color primario */
+}
+
+/* Color de fondo secundario */
+.my-bg-secondary {
+    background-color: #178740; /* Color secundario */
+}
+
+/* Color de fondo de acento */
+.my-bg-accent {
+    background-color: #f77f00; /* Color de acento */
+}
+
+/* Color de fondo oscuro */
+.my-bg-dark {
+    background-color: #02010A; /* Color de fondo */
+}
+
+/* Color de texto primario */
+.my-text-primary {
+    color: #22007C; /* Color primario */
+}
+
+/* Color de texto secundario */
+.my-text-secondary {
+    color: #178740; /* Color secundario */
+}
+
+/* Color de texto de acento */
+.my-text-accent {
+    color: #f77f00; /* Color de acento */
+}
+
+/* Color de texto claro */
+.my-text-light {
+    color: #e0e1dd; /* Color del texto */
+}
+
+/* Color de fondo del botón */
+.my-btn-primary {
+    background-color: #f77f00; /* Color de acento */
+    color: #02010A; /* Color de texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-weight: 500; /*Grosor de la fuente*/
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.my-btn-primary:hover {
+    background-color: #178740; /* Color secundario en hover */
+    color: #e0e1dd; /* Color del texto en hover */
+}
+
+/* Estilo del enlace */
+.my-link-accent {
+    color: #f77f00; /* Color de acento */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.my-link-accent:hover {
+    color: #e0e1dd; /* Color del texto en hover */
+    text-decoration: underline; /* Subrayado en hover */
+}
+.hero {
+    min-height: 50vh; /* Ajusta según lo necesites */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #22007C; /* O el color que prefieras */
+    color: #e0e1dd; /* Color de texto claro */
+}
+
+.my-icon-img{
+    width: 50px;
+    height: 50px;
+}
+.my-icon-img:hover{
+    padding: 1px;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #f77f00;
+}
