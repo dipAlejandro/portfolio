@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
-  const savedLanguage = localStorage.getItem('language') || 'es'; // Idioma por defecto
+  const savedLanguage = localStorage.getItem("language") || "es"; // Idioma por defecto
 
   i18next.init(
     {
@@ -182,14 +182,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  document
-    .getElementById("languageSwitch")
-    .addEventListener("change", function (event) {
-      const lang = event.target.checked ? "es" : "en";
+  // Selecciona todos los elementos del dropdown que cambian el idioma
+  document.querySelectorAll(".dropdown-item[data-lang]").forEach((item) => {
+    item.addEventListener("click", function (event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del enlace
+
+      const lang = this.getAttribute("data-lang"); // Obtiene el valor del idioma desde el atributo data-lang
+
       i18next.changeLanguage(lang, function (err) {
         if (err) return console.error(err);
-        localStorage.setItem('language', lang); // Guardar el idioma seleccionado
+        localStorage.setItem("language", lang); // Guarda el idioma seleccionado
         updateContent();
       });
     });
+  });
 });

@@ -21,90 +21,116 @@
     <title>Alejandro Damian Dip :: Portfolio</title>
   </head>
   <body class="bg-black bg-gradient my-text-light" id="start">
-    <div class="d-flex flex-column">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container-fluid">
-          <ul class="navbar-nav mx-auto d-flex flex-column flex-md-row">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a
                 href="#aboutme"
                 class="nav-link my-link-accent fs-3"
                 data-i18n="titles.aboutMe"
-                >Sobre Mí</a
               >
+                Sobre Mí
+              </a>
             </li>
             <li class="nav-item">
               <a
                 href="#myprojects"
                 class="nav-link my-link-accent fs-3"
                 data-i18n="titles.myProjects"
-                >Mis Proyectos</a
               >
+                Mis Proyectos
+              </a>
             </li>
             <li class="nav-item">
               <a
                 href="#contactme"
                 class="nav-link my-link-accent fs-3"
                 data-i18n="titles.contactMe"
-                >Contactame</a
               >
+                Contactame
+              </a>
             </li>
-            <li class="nav-item ms-md-3">
-              <div class="form-check form-switch d-flex align-items-center">
-                <!-- Bandera "En" a la izquierda -->
-                <label for="languageSwitch" class="me-5">
-                  <img
-                    src="imgs/flag-en.svg"
-                    alt="Eng-flag"
-                    width="24"
-                    height="24"
-                  />
-                </label>
-
-                <!-- Switch -->
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="languageSwitch" checked
-                />
-
-                <!-- Bandera "Es" a la derecha -->
-                <label class="ms-2" for="languageSwitch">
-                  <img
-                    src="imgs/flag-es.svg"
-                    alt="Es-flag"
-                    width="24"
-                    height="24"
-                  />
-                </label>
-              </div>
+            <li class="nav-item dropdown" data-bs-theme="dark">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-label="Change language"
+              >
+                <span>Lang</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-item"
+                    data-lang="en"
+                    aria-label="Change language to English"
+                  >
+                    <img
+                      src="imgs/flag-en.svg"
+                      alt="English flag"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-item"
+                    data-lang="es"
+                    aria-label="Change language to Spanish"
+                  >
+                    <img
+                      src="imgs/flag-es.svg"
+                      alt="Spanish flag"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section id="hero" class="hero border rounded mx-auto w-75 my-4 p-3">
-        <div class="container">
-          <h4 data-i18n="hero.greeting">Hola, soy</h4>
-          <h1 class="display-1">Alejandro Dami&aacute;n Dip</h1>
-          <h2 class="display-3" data-i18n="hero.profession">
-            Desarrollador Web Backend
-          </h2>
-          <hr class="border border-2" />
-          <p class="lead" data-i18n="hero.intro">
-            Desarrollador Java. Estoy buscando enfocarme principalmente en el
-            desarrollo backend utilizando tecnologías como
-            <strong>Java</strong>,
-            <strong>Spring Framework / Spring Boot</strong>,
-            <strong>MySQL</strong> , y <strong>Git</strong>, entre otras
-            relacionadas con el desarrollo de software.<br />
-            <p ><a href="#aboutme" class="my-text-accent"
-              >Saber Más
-            </a></p>
-          </p>
-        </div>
-      </section>
-    </div>
+    <section id="hero" class="hero border rounded mx-auto w-75 my-4 p-3">
+      <div class="container">
+        <h4 data-i18n="hero.greeting">Hola, soy</h4>
+        <h1 class="display-1">Alejandro Dami&aacute;n Dip</h1>
+        <h2 class="display-3" data-i18n="hero.profession">
+          Desarrollador Web Backend
+        </h2>
+        <hr class="border border-2" />
+        <p class="lead" data-i18n="hero.intro">
+          Desarrollador Java. Estoy buscando enfocarme principalmente en el
+          desarrollo backend utilizando tecnologías como
+          <strong>Java</strong>,
+          <strong>Spring Framework / Spring Boot</strong>,
+          <strong>MySQL</strong> , y <strong>Git</strong>, entre otras
+          relacionadas con el desarrollo de software.<br/>
+        </p>
+        <a href="#aboutme" class="my-text-accent" data-i18n="btns.learnMore">Saber Más</a>
+      </div>
+    </section>
 
     <section id="aboutme" class="w-75 mx-auto my-4 text-center">
       <h2 class="display-3 py-3" data-i18n="titles.aboutMe">Sobre Mí</h2>
@@ -156,7 +182,10 @@
         />
 
         <div class="card-body">
-          <p class="card-text lead" data-i18n="myProjectsSection.projects.0.description">
+          <p
+            class="card-text lead"
+            data-i18n="myProjectsSection.projects.0.description"
+          >
             Sitio web informativo para una escuela de artes marciales chinas. El
             propósito de este proyecto fue proporcionar una forma de mostrar la
             historia, filosof&iacute;a de la escuela, ademas de contenido visual
@@ -167,10 +196,14 @@
           </p>
           <a
             href="https://shaolinquanhu.netlify.app/"
-            class="btn my-btn-primary" data-i18n="btns.visit">Visitar</a
+            class="btn my-btn-primary"
+            data-i18n="btns.visit"
+            >Visitar</a
           >
           <footer class="card-footer my-3">
-            <h6 data-i18n="myProjectsSection.global.tecnologies">Tecnologias utilizadas</h6>
+            <h6 data-i18n="myProjectsSection.global.tecnologies">
+              Tecnologias utilizadas
+            </h6>
             <div class="my-3 d-flex justify-content-center flex-wrap">
               <div class="mx-3">
                 <figure class="figure">
@@ -226,16 +259,24 @@
             <div>
               <ul class="text-start">
                 <li>
-                  <strong data-i18n="myProjectsSection.global.startDate">Fecha de Inicio</strong>
+                  <strong data-i18n="myProjectsSection.global.startDate"
+                    >Fecha de Inicio</strong
+                  >
                   <i class="fa fa-calendar-days"></i> : <em>Mar 2022.</em>
                 </li>
                 <li>
-                  <strong data-i18n="myProjectsSection.global.endDate">Fecha de Finalización</strong>
+                  <strong data-i18n="myProjectsSection.global.endDate"
+                    >Fecha de Finalización</strong
+                  >
                   <i class="fa fa-calendar-days"></i> : <em>May 2022.</em>
                 </li>
                 <li>
-                  <strong data-i18n="myProjectsSection.global.currentStatus">Estado Actual:</strong>
-                  <em data-i18n="myProjectsSection.global.currentStatusDeployed">Desplegado.</em>
+                  <strong data-i18n="myProjectsSection.global.currentStatus"
+                    >Estado Actual:</strong
+                  >
+                  <em data-i18n="myProjectsSection.global.currentStatusDeployed"
+                    >Desplegado.</em
+                  >
                 </li>
               </ul>
             </div>
@@ -261,7 +302,10 @@
         />
 
         <div class="card-body">
-          <p class="card-text lead" data-i18n="myProjectsSection.projects.1.description">
+          <p
+            class="card-text lead"
+            data-i18n="myProjectsSection.projects.1.description"
+          >
             Pagina web que provee información sobre la cotización en pesos
             argentinos ($ARS) de los principales tipos de dólares disponibles en
             la República Argentina. Esto se logra consumiendo la informacion
@@ -269,19 +313,23 @@
           </p>
           <a
             href="https://spring-boot-currency-app.onrender.com/"
-            class="btn my-btn-primary" data-i18n="btns.visit"
+            class="btn my-btn-primary"
+            data-i18n="btns.visit"
             >Visitar</a
           >
           <a
             href="https://giShub.com/dipAlejandro/spring-boot-currency-app"
             target="_blank"
-            class="btn my-btn-primary" data-i18n="btns.viewOnGithub"
+            class="btn my-btn-primary"
+            data-i18n="btns.viewOnGithub"
             >Ver en GitHub <i class="fa-brands fa-github"></i
           ></a>
         </div>
 
         <footer class="card-footer my-3">
-          <h6 data-i18n="myProjectsSection.global.tecnologies">Tecnologias utilizadas</h6>
+          <h6 data-i18n="myProjectsSection.global.tecnologies">
+            Tecnologias utilizadas
+          </h6>
           <div class="my-3 d-flex justify-content-center flex-wrap">
             <div class="mx-3">
               <figure class="figure">
@@ -343,16 +391,24 @@
           <div>
             <ul class="text-start">
               <li>
-                <strong data-i18n="myProjectsSection.global.startDate">Fecha de Inicio</strong>
+                <strong data-i18n="myProjectsSection.global.startDate"
+                  >Fecha de Inicio</strong
+                >
                 <i class="fa fa-calendar-days"></i> : <em>Ago 2024.</em>
               </li>
               <li>
-                <strong data-i18n="myProjectsSection.global.endDate">Fecha de Finalización</strong>
+                <strong data-i18n="myProjectsSection.global.endDate"
+                  >Fecha de Finalización</strong
+                >
                 <i class="fa fa-calendar-days"></i> : <em>Ago 2024.</em>
               </li>
               <li>
-                <strong data-i18n="myProjectsSection.global.currentStatus">Estado Actual:</strong>
-                <em data-i18n="myProjectsSection.global.currentStatusDeployed">Desplegado.</em>
+                <strong data-i18n="myProjectsSection.global.currentStatus"
+                  >Estado Actual:</strong
+                >
+                <em data-i18n="myProjectsSection.global.currentStatusDeployed"
+                  >Desplegado.</em
+                >
               </li>
             </ul>
           </div>
@@ -366,32 +422,45 @@
         <div class="card-header">
           <h3 class="card-title text-center">Stock Manager</h3>
           <h6 class="card-subtitle mb-2">
-            <i class="fa fa-calendar-days"></i> Jul 2024 - <span data-i18n="myProjectsSection.global.currentStatusInDevelop">A&uacute;n en
-            desarrollo</span>
+            <i class="fa fa-calendar-days"></i> Jul 2024 -
+            <span data-i18n="myProjectsSection.global.currentStatusInDevelop"
+              >A&uacute;n en desarrollo</span
+            >
           </h6>
         </div>
         <img src="..." alt="" class="card-img-top" />
 
         <div class="card-body">
-          <p class="card-text lead" data-i18n="myProjectsSection.projects.2.description">
+          <p
+            class="card-text lead"
+            data-i18n="myProjectsSection.projects.2.description"
+          >
             Aplicacion web que permite el registro, modificacion y eliminacion
             de productos y proveedores en una base de datos. Asi como tambien
             permite importar informacion desde archivos <kbd>.csv</kbd> y
             <kbd>.xlsx</kbd>, y tambien exportar la informacion a documentos
             <em>PDF</em> y <em>Excel</em>
           </p>
-          <a href="..." class="btn my-btn-primary disabled" data-i18n="btns.visit">Visitar</a>
+          <a
+            href="..."
+            class="btn my-btn-primary disabled"
+            data-i18n="btns.visit"
+            >Visitar</a
+          >
           <a
             href="https://github.com/dipAlejandro/"
             target="_blank"
-            class="btn my-btn-primary" data-i18n="btns.viewOnGithub"
+            class="btn my-btn-primary"
+            data-i18n="btns.viewOnGithub"
           >
             Ver en GitHub
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
         <footer class="card-footer">
-          <h6 data-i18n="myProjectsSection.global.tecnologies">Tecnologias utilizadas</h6>
+          <h6 data-i18n="myProjectsSection.global.tecnologies">
+            Tecnologias utilizadas
+          </h6>
           <div class="my-3 d-flex justify-content-center flex-wrap">
             <div class="mx-3">
               <figure class="figure">
@@ -459,16 +528,24 @@
           <div>
             <ul class="text-start">
               <li>
-                <strong data-i18n="myProjectsSection.global.startDate">Fecha de Inicio</strong>
+                <strong data-i18n="myProjectsSection.global.startDate"
+                  >Fecha de Inicio</strong
+                >
                 <i class="fa fa-calendar-days"></i> : <em>Jul 2024.</em>
               </li>
               <li>
-                <strong data-i18n="myProjectsSection.global.endDate">Fecha de Finalización</strong>
+                <strong data-i18n="myProjectsSection.global.endDate"
+                  >Fecha de Finalización</strong
+                >
                 <i class="fa fa-calendar-days"></i> : <em>-</em>
               </li>
               <li>
-                <strong data-i18n="myProjectsSection.global.currentStatus">Estado Actual:</strong>
-                <em data-i18n="myProjectsSection.global.currentStatusInDevelop">A&uacute;n en desarrollo. </em>
+                <strong data-i18n="myProjectsSection.global.currentStatus"
+                  >Estado Actual:</strong
+                >
+                <em data-i18n="myProjectsSection.global.currentStatusInDevelop"
+                  >A&uacute;n en desarrollo.
+                </em>
               </li>
             </ul>
           </div>
@@ -482,14 +559,19 @@
         <div class="card-header">
           <h3 class="card-title">API Restful de Administrac&iacute;on</h3>
           <h6 class="card-subtitle m-2">
-            <i class="fa fa-calendar-days"></i> Ago 2024 - <span data-i18n="myProjectsSection.global.currentStatusInDevelop">A&uacute;n en
-            desarrollo.</span>
+            <i class="fa fa-calendar-days"></i> Ago 2024 -
+            <span data-i18n="myProjectsSection.global.currentStatusInDevelop"
+              >A&uacute;n en desarrollo.</span
+            >
           </h6>
         </div>
         <img src="..." alt="" class="card-img-top" />
 
         <div class="card-body">
-          <p class="card-text lead" data-i18n="myProjectsSection.projects.3.description">
+          <p
+            class="card-text lead"
+            data-i18n="myProjectsSection.projects.3.description"
+          >
             API que proporciona operaciones CRUD para facilitar la gestion de
             informacion de alumnos, profesores y dojos de una escuela de artes
             marciales chinas. Ademas de un cliente web que consuma la API e
@@ -497,10 +579,17 @@
             registrarse y acceder para consultar, agregar, modificar y eliminar
             la informacion segun su rol de usuario.
           </p>
-          <a href="..." class="btn my-btn-primary disabled" data-i18n="btns.visit">Visitar</a>
+          <a
+            href="..."
+            class="btn my-btn-primary disabled"
+            data-i18n="btns.visit"
+            >Visitar</a
+          >
         </div>
         <footer class="card-footer">
-          <h6 data-i18n="myProjectsSection.global.tecnologies">Tecnologias utilizadas</h6>
+          <h6 data-i18n="myProjectsSection.global.tecnologies">
+            Tecnologias utilizadas
+          </h6>
           <div class="my-3 d-flex justify-content-center flex-wrap">
             <div class="mx-3">
               <figure class="figure">
@@ -557,16 +646,24 @@
           <div>
             <ul class="text-start">
               <li>
-                <strong data-i18n="myProjectsSection.global.startDate">Fecha de Inicio</strong>
+                <strong data-i18n="myProjectsSection.global.startDate"
+                  >Fecha de Inicio</strong
+                >
                 <i class="fa fa-calendar-days"></i> : <em>Ago 2024.</em>
               </li>
               <li>
-                <strong data-i18n="myProjectsSection.global.endDate">Fecha de Finalización</strong>
+                <strong data-i18n="myProjectsSection.global.endDate"
+                  >Fecha de Finalización</strong
+                >
                 <i class="fa fa-calendar-days"></i> : <em>-</em>
               </li>
               <li>
-                <strong data-i18n="myProjectsSection.global.currentStatus" >Estado Actual:</strong>
-                <em data-i18n="myProjectsSection.global.currentStatusInDevelop">A&uacute;n en desarrollo. </em>
+                <strong data-i18n="myProjectsSection.global.currentStatus"
+                  >Estado Actual:</strong
+                >
+                <em data-i18n="myProjectsSection.global.currentStatusInDevelop"
+                  >A&uacute;n en desarrollo.
+                </em>
               </li>
             </ul>
           </div>
@@ -599,7 +696,11 @@
             placeholder="Example: Hi Alejandro!, I'm interested in your developer profile."
             required
           ></textarea>
-          <button class="btn my-btn-primary my-2" type="submit" data-i18n="contactMeSection.form.sendMessage"></button>
+          <button
+            class="btn my-btn-primary my-2"
+            type="submit"
+            data-i18n="contactMeSection.form.sendMessage"
+          ></button>
         </form>
       </div>
     </section>
