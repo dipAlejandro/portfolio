@@ -692,7 +692,8 @@
         </div>
 
         <form class="my-3" id="contact-form" name="contact" method="post">
-          <input
+          <div class="form-floating">
+            <input
             class="form-control my-2"
             id="from_email"
             type="email"
@@ -700,6 +701,10 @@
             placeholder="Your Email"
             required
           />
+          <label for="from_email">Your Email</label>
+          </div>
+          
+          <div class="form-floating">
           <textarea
             class="form-control my-2"
             name="message"
@@ -709,6 +714,8 @@
             placeholder="Example: Hi Alejandro!, I'm interested in your developer profile."
             required
           ></textarea>
+          <label for="user_msg">Message</label>
+        </div>
           <button
             class="btn my-btn-primary my-2"
             type="submit"
