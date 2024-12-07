@@ -144,18 +144,18 @@
       </p>
       <ul class="text-start my-text-light m-2 fs-4">
         <li>Spring Framework / Spring Boot</li>
-        <li>JPA</li>
+        <li>JPA / Hibernate</li>
         <li>Maven</li>
       </ul>
       <p class="my-text-light m-2 fs-4" data-i18n="aboutMeSection.tools">
-        Herramientas como Git y Bases de datos como MySQL. Tambien manejo en
-        menor medida tecnologias Frontend como HTML, CSS y Javascript.
+        Herramientas como Git y Bases de datos como MySQL. Tambien manejo
+        tecnologias Frontend como HTML, CSS y Typescript.
       </p>
       <p
         class="my-text-light m-2 fs-4"
         data-i18n="aboutMeSection.bestPractices"
       >
-        Siempre tratando de seguir buenas practicas de desarrollo y aplicar
+        Siempre trato de seguir buenas practicas de desarrollo y aplicar
         principios como <em>SOLID</em>, <em>DRY</em>, y patrones de diseños como
         <em>MVC</em>.
       </p>
@@ -497,11 +497,11 @@
             <div class="mx-3">
               <figure class="figure">
                 <img
-                  src="imgs/hypersql-logo.png"
+                  src="imgs/mysql-logo.png"
                   alt="hsqldb logo"
                   class="my-icon-img"
                 />
-                <figcaption>HyperSQL</figcaption>
+                <figcaption>MySql</figcaption>
               </figure>
             </div>
             <div class="mx-3">
@@ -559,7 +559,7 @@
       <!-- ===================================================================== -->
       <div class="card bg-dark my-text-light my-5">
         <div class="card-header">
-          <h3 class="card-title">API Restful de Administrac&iacute;on</h3>
+          <h3 class="card-title">Shaolinquan Hu Administration Plataform</h3>
           <h6 class="card-subtitle m-2">
             <i class="fa fa-calendar-days"></i> Ago 2024 -
             <span data-i18n="myProjectsSection.global.currentStatusInDevelop"
@@ -570,16 +570,52 @@
         <img src="..." alt="" class="card-img-top" />
 
         <div class="card-body">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imgs/projects/sqh_admin_plataform_view1.png" class="carousel-img d-block w-100  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/projects/sqh_admin_plataform_view2.png" class="carousel-img d-block w-100  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/projects/sqh_admin_plataform_view3.png" class="carousel-img d-block w-100  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/projects/sqh_admin_plataform_view4.png" class="carousel-img d-block w-100  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/projects/sqh_admin_plataform_view5.png" class="carousel-img d-block w-100  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/projects/sqh_admin_plataform_view6.png" class="carousel-img d-block w-100  " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/projects/sqh_admin_plataform_view7.png" class="carousel-img d-block w-100  " alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <p
             class="card-text lead"
             data-i18n="myProjectsSection.projects.3.description"
           >
-            API que proporciona operaciones CRUD para facilitar la gestion de
-            informacion de alumnos, profesores y dojos de una escuela de artes
-            marciales chinas. Ademas de un cliente web que consuma la API e
-            interactue de manera amigable con los usuarios, permitiendo
-            registrarse y acceder para consultar, agregar, modificar y eliminar
-            la informacion segun su rol de usuario.
+            El proyecto esta compuesto por una API que proporciona operaciones
+            CRUD para facilitar la gestion de informacion de alumnos, profesores
+            y dojos de una escuela de artes marciales chinas. Ademas de un
+            cliente web que consuma la API e interactue de manera amigable con
+            los usuarios, permitiendo registrarse y acceder para consultar,
+            agregar, modificar y eliminar la informacion segun su rol de
+            usuario. El cliente web tambien proporciona comunicación con el
+            usuario a traves de email, notificandole cuando su solicitud de
+            cuenta sea aceptada o rechazada.
           </p>
           <a
             href="..."
@@ -622,6 +658,16 @@
                   class="my-icon-img"
                 />
                 <figcaption>MySql</figcaption>
+              </figure>
+            </div>
+            <div class="mx-3">
+              <figure class="figure">
+                <img
+                  src="imgs/angular_logo.png"
+                  alt="Git logo"
+                  class="my-icon-img"
+                />
+                <figcaption>Angular</figcaption>
               </figure>
             </div>
             <div class="mx-3">
@@ -694,28 +740,28 @@
         <form class="my-3" id="contact-form" name="contact" method="post">
           <div class="form-floating">
             <input
-            class="form-control my-2"
-            id="from_email"
-            type="email"
-            name="from_email"
-            placeholder="Your Email"
-            required
-          />
-          <label for="from_email">Your Email</label>
+              class="form-control my-2"
+              id="from_email"
+              type="email"
+              name="from_email"
+              placeholder="Your Email"
+              required
+            />
+            <label for="from_email">Your Email</label>
           </div>
-          
+
           <div class="form-floating">
-          <textarea
-            class="form-control my-2"
-            name="message"
-            id="user_msg"
-            rows="7"
-            cols="35"
-            placeholder="Example: Hi Alejandro!, I'm interested in your developer profile."
-            required
-          ></textarea>
-          <label for="user_msg">Message</label>
-        </div>
+            <textarea
+              class="form-control my-2"
+              name="message"
+              id="user_msg"
+              rows="7"
+              cols="35"
+              placeholder="Example: Hi Alejandro!, I'm interested in your developer profile."
+              required
+            ></textarea>
+            <label for="user_msg">Message</label>
+          </div>
           <button
             class="btn my-btn-primary my-2"
             type="submit"
