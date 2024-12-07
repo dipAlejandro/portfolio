@@ -12,8 +12,8 @@
   },
   "aboutMe": {
     "intro": "My name is Alejandro Damián Dip, I am from Argentina. I specialize in <strong>backend web development</strong> using primarily Java ecosystem technologies such as:",
-    "tools": "Tools like Git and databases like MySQL. I also have some experience with frontend technologies such as HTML, CSS, and JavaScript.",
-    "bestPractices": "Always striving to follow good development practices and apply principles such as <em>SOLID</em>, <em>DRY</em>, and design patterns like <em>MVC</em>."
+    "tools": "Tools like Git and databases like MySQL. I also handle Frontend technologies such as HTML, CSS and Typescript.",
+    "bestPractices": "I always try to follow good development practices and apply principles such as <em>SOLID</em>, <em>DRY</em>, and design patterns like <em>MVC</em>."
   },
   "myProjects": {
     "projects": [

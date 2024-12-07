@@ -7,13 +7,13 @@
   "hero": {
     "greeting": "Hola, soy",
     "profession": "Desarrollador Backend Web",
-    "intro": "Desarrollador Java. Estoy buscando enfocarme principalmente en el área de desarrollo backend utilizando tecnologías como <strong>Java</strong>, <strong>Spring Framework / Spring Boot</strong>, <strong>MySQL</strong> y <strong>Git</strong>, entre otras relacionadas con el área de desarrollo de software.",
+    "intro": "Desarrollador Java. Mi enfoque está principalmente en el área de desarrollo backend utilizando tecnologías como <strong>Java</strong>, <strong>Spring Framework / Spring Boot</strong>, <strong>MySQL</strong> y <strong>Git</strong>, entre otras relacionadas con el área de desarrollo de software.",
     "learnMore": "Saber más"
   },
   "aboutMe": {
     "intro": "Mi nombre es Alejandro Damián Dip, soy de Argentina. Me especializo en el área del <strong>desarrollo web Backend</strong> utilizando principalmente tecnologías del ecosistema Java como:",
-    "tools": "Herramientas como Git y Bases de datos como MySQL. También manejo en menor medida tecnologías Frontend como HTML, CSS y Javascript.",
-    "bestPractices": "Siempre tratando de seguir buenas prácticas de desarrollo y aplicar principios como <em>SOLID</em>, <em>DRY</em>, y patrones de diseño como <em>MVC</em>."
+    "tools": "Herramientas como Git y Bases de datos como MySQL. Tambien manejo tecnologias Frontend como HTML, CSS y Typescript.",
+    "bestPractices": "Siempre trato de seguir buenas prácticas de desarrollo y aplicar principios como <em>SOLID</em>, <em>DRY</em>, y patrones de diseño como <em>MVC</em>."
   },
   "myProjects": {
     "projects": [
