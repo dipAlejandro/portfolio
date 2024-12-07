@@ -37,7 +37,7 @@
         "status": "Aún en desarrollo"
       },
       {
-        "description": "API que proporciona operaciones CRUD para facilitar la gestión de información de alumnos, profesores y dojos de una escuela de artes marciales chinas. Además de un cliente web que consuma la API e interactúe de manera amigable con los usuarios, permitiendo registrarse y acceder para consultar, agregar, modificar y eliminar la información según su rol de usuario.",
+        "description": "El proyecto esta compuesto por una API que proporciona operaciones CRUD para facilitar la gestion de informacion de alumnos, profesores y dojos de una escuela de artes marciales chinas. Ademas de un cliente web que consuma la API e interactue de manera amigable con los usuarios, permitiendo registrarse y acceder para consultar, agregar, modificar y eliminar la informacion segun su rol de usuario. El cliente web tambien proporciona comunicación con el usuario a traves de email, notificandole cuando su solicitud de cuenta sea aceptada o rechazada.",
         "startDate": "Ago 2024",
         "endDate": "-",
         "status": "Aún en desarrollo"
