@@ -7,7 +7,7 @@
   "hero": {
     "greeting": "Hello, I'm",
     "profession": "Backend Web Developer",
-    "intro": "Java Developer. I am looking to focus primarily on backend development using technologies such as <strong>Java</strong>, <strong>Spring Framework / Spring Boot</strong>, <strong>MySQL</strong>, and <strong>Git</strong>, among others related to software development.",
+    "intro": "Java Developer. My focus is mainly on the backend development area using technologies such as <strong>Java</strong>, <strong>Spring Framework / Spring Boot</strong>, <strong>MySQL</strong>, and <strong>Git</strong>, among others related to software development.",
     "learnMore": "Learn More"
   },
   "aboutMe": {
