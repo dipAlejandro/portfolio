@@ -1,0 +1,96 @@
+{
+  "titles": {
+    "aboutMe": "About Me",
+    "myProjects": "My Projects",
+    "contactMe": "Contact Me"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "profession": "Backend Web Developer",
+    "intro": "My focus is primarily on backend development using technologies like <strong class='text-primary'>Java</strong>, <strong class='text-primary'>Spring Framework / Spring Boot</strong>, <strong class='text-primary'>MySQL</strong>, and <strong class='text-primary'>Git</strong>, among others related to software development."
+  },
+  "btns": {
+    "learnMore": "Learn More",
+    "contactMe": "Contact Me",
+    "visit": "Visit",
+    "viewOnGithub": "View on GitHub"
+  },
+  "aboutMeSection": {
+    "intro": "My name is Alejandro Damián Dip, I'm from Argentina. I specialize in software development using the following technologies:",
+    "bestPractices": "Always focused on following development best practices and applying principles like <em class='text-primary'>SOLID</em>, <em class='text-primary'>DRY</em>, as well as design patterns and architecture.",
+    "otherTechTitle": "Other Technologies"
+  },
+  "myProjectsSection": {
+    "global": {
+      "tecnologies": "Technologies used",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "monthsAbbr": {
+        "1": "Jan",
+        "2": "Feb",
+        "3": "Mar",
+        "4": "Apr",
+        "5": "May",
+        "6": "Jun",
+        "7": "Jul",
+        "8": "Aug",
+        "9": "Sep",
+        "10": "Oct",
+        "11": "Nov",
+        "12": "Dec"
+      }
+    },
+    "projects": [
+      {
+        "title": "Shaolinquan Hu - Website",
+        "description": "Informational website for a Chinese martial arts school. The purpose of this project was to provide a way to showcase the school's history and philosophy, along with visual content (images and videos) displaying the institution's activities. It also includes communication channels for obtaining information about classes, all presented in a simple manner for interested users.",
+        "startDate": "2022-03-01",
+        "endDate": "2022-05-01"
+      },
+      {
+        "title": "Currency Value Application",
+        "description": "Web page that provides information about the exchange rate in Argentine pesos ($ARS) of the main types of dollars available in Argentina. This is achieved by consuming data from an API and displaying it in an HTML view."
+      },
+      {
+        "title": "Shaolinquan Hu Administration Platform",
+        "description": "The project consists of an API that provides CRUD operations to facilitate the management of student, teacher, and dojo information for a Chinese martial arts school. Additionally, a web client consumes the API and interacts with users in a friendly manner, allowing registration and access to consult, add, modify, and delete information according to their user role. The web client also provides user communication via email, notifying them when their account request is approved or rejected."
+      }
+    ]
+  },
+  "navbar": {
+    "toggle": "Toggle navigation",
+    "languageSelector": "Language selector",
+    "currentLanguage": "Language",
+    "englishOption": "Change language to English",
+    "spanishOption": "Change language to Spanish",
+    "englishFlag": "English flag",
+    "spanishFlag": "Spanish flag",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "contactMeSection": {
+    "intro": "If you'd like to get in touch, please fill out the form below. I'll get back to you as soon as possible.",
+    "alert": {
+      "title": "Message sent!",
+      "message": "I'll reply as soon as possible."
+    },
+    "form": {
+      "title": "Contact Form",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "messageLabel": "Message",
+      "submitBtn": "Send",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email",
+      "messagePlaceholder": "Write your message here"
+    }
+  },
+  "social": {
+    "githubAria": "GitHub link",
+    "linkedinAria": "LinkedIn link",
+    "emailAria": "Send email"
+  },
+  "footer": {
+    "copyright": "&copy; 2024 Alejandro Damián Dip. All rights reserved."
+  }
+}

@@ -1,125 +1,400 @@
-/* Color de fondo primario */
-.my-bg-primary {
-    background-color: #22007C;
-    /* Color primario */
+:root {
+  --primary-color: #6e57e0;
+  --primary-hover: #5a46c7;
+  --secondary-color: #29323c;
+  --text-light: #f5f5f5;
+  --text-dark: #333;
+  --card-bg: #1a1e24;
+  --gradient-dark: linear-gradient(to bottom, #121212, #1f1f1f);
+  --transition: all 0.3s ease;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Color de fondo secundario */
-.my-bg-secondary {
-    background-color: #178740;
-    /* Color secundario */
+/* Base Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--gradient-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-/* Color de fondo de acento */
-.my-bg-accent {
-    background-color: #f77f00;
-    /* Color de acento */
-}
-
-/* Color de fondo oscuro */
-.my-bg-dark {
-    background-color: #02010A;
-    /* Color de fondo */
-}
-
-/* Color de texto primario */
-.my-text-primary {
-    color: #22007C;
-    /* Color primario */
-}
-
-/* Color de texto secundario */
-.my-text-secondary {
-    color: #178740;
-    /* Color secundario */
-}
-
-/* Color de texto de acento */
-.my-text-accent {
-    color: #f77f00;
-    /* Color de acento */
-}
-
-/* Color de texto claro */
 .my-text-light {
-    color: #e0e1dd;
-    /* Color del texto */
+  color: var(--text-light);
 }
 
-/* Color de fondo del botón */
-.my-btn-primary {
-    background-color: #f77f00;
-    /* Color de acento */
-    color: #02010A;
-    /* Color de texto del botón */
-    border: none;
-    /* Sin borde */
-    padding: 10px 20px;
-    /* Espaciado interno */
-    text-transform: uppercase;
-    /* Texto en mayúsculas */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    font-size: 1rem;
-    /* Tamaño de la fuente */
-    font-weight: 500;
-    /*Grosor de la fuente*/
-    transition: background-color 0.3s;
-    /* Transición suave para el color de fondo */
-}
-
-.my-btn-primary:hover {
-    background-color: #178740;
-    /* Color secundario en hover */
-    color: #e0e1dd;
-    /* Color del texto en hover */
-}
-
-/* Estilo del enlace */
 .my-link-accent {
-    color: #f77f00;
-    /* Color de acento */
-    text-decoration: none;
-    /* Elimina el subrayado */
+  position: relative;
+  transition: var(--transition);
+}
+
+.my-link-accent:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--transition);
+}
+
+.my-link-accent:hover:after {
+  width: 70%;
 }
 
 .my-link-accent:hover {
-    color: #e0e1dd;
-    /* Color del texto en hover */
-    text-decoration: underline;
-    /* Subrayado en hover */
+  color: var(--primary-color) !important;
 }
 
+/* Button Styles */
+.my-btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(110, 87, 224, 0.4);
+}
+
+.my-btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(110, 87, 224, 0.6);
+}
+
+/* Hero Section */
 .hero {
-    min-height: 50vh;
-    /* Ajusta según lo necesites */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #22007C;
-    /* O el color que prefieras */
-    color: #e0e1dd;
-    /* Color de texto claro */
+  background-image: url("../imgs/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  background: var(--card-bg);
+  margin-bottom: 3rem;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  transition: var(--transition);
+  filter: brightness(0.9);
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.03);
+  filter: brightness(1);
+}
+
+.card-body {
+  padding: 1.8rem;
+}
+
+.card-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+}
+
+/* Icon Styles */
 .my-icon-img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: var(--transition);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 }
 
-.my-icon-img:hover {
-    padding: 1px;
-    width: 55px;
-    height: 55px;
-    border: 2px solid #f77f00;
+figure:hover .my-icon-img {
+  transform: translateY(-5px) scale(1.1);
 }
 
-@media (min-width: 768px) {
-    .carousel-img {
-    width: 50% !important;
-    height: auto;
-    object-fit: cover;
+figure figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
+
+/* Carousel Styles */
+.carousel-img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 0.7;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* Contact Form */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
+  border-radius: 10px;
+  padding: 12px 15px;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--text-light);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(110, 87, 224, 0.25);
+}
+
+.form-floating label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2rem 0;
+}
+
+footer a {
+  color: var(--text-light);
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Section animations */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navbar */
+.navbar {
+  transition: var(--transition);
+  padding: 1rem 0;
+}
+
+.backdrop-filter-blur {
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Section titles */
+section h2 {
+  margin-bottom: 2.5rem;
+}
+
+section h2 span {
+  position: relative;
+  display: inline-block;
+}
+
+section h2 span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -10px;
+  left: 0;
+  border-radius: 3px;
+}
+
+/* Scroll to top button */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-5px);
+}
+
+/* Badge styles */
+.badge {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-img-top,
+  .carousel-img {
+    height: 220px;
+  }
+
+  .hero-content {
+    padding: 3rem 1.5rem !important;
+  }
+
+  h1.display-1 {
+    font-size: 2.5rem;
+  }
+
+  h2.display-3 {
+    font-size: 2rem;
+  }
+
+  section {
+    width: 90% !important;
+  }
+
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Skill badges */
+.skill-badge {
+  background-color: rgba(110, 87, 224, 0.2);
+  color: var(--text-light);
+  border: 1px solid rgba(110, 87, 224, 0.3);
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.skill-badge:hover {
+  background-color: rgba(110, 87, 224, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Project links */
+.project-links {
+  margin-top: 1.5rem;
+}
+
+.project-links a {
+  margin-right: 10px;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  color: var(--text-light);
 }
 

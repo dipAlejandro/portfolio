@@ -1,0 +1,94 @@
+{
+    "titles": {
+        "aboutMe": "Sobre Mí",
+        "myProjects": "Mis Proyectos",
+        "contactMe": "Contáctame"
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "profession": "Desarrollador Web Backend",
+        "intro": "Mi enfoque está principalmente en el desarrollo backend utilizando tecnologías como <strong class='text-primary'>Java</strong>, <strong class='text-primary'>Spring Framework / Spring Boot</strong>, <strong class='text-primary'>MySQL</strong>, y <strong class='text-primary'>Git</strong>, entre otras relacionadas con el desarrollo de software."
+    },
+    "btns": {
+        "learnMore": "Saber Más",
+        "contactMe": "Contactáme",
+        "visit": "Visitar",
+        "viewOnGithub": "Ver en GitHub"
+    },
+    "aboutMeSection": {
+        "intro": "Mi nombre es Alejandro Damián Dip, soy de Argentina. Me especializo en el desarrollo de software utilizando las siguientes tecnologías:",
+        "otherTechTitle": "Otras Tecnologías",
+        "bestPractices": "Siempre centrado en seguir buenas prácticas de desarrollo y aplicar principios como <em class='text-primary'>SOLID</em>, <em class='text-primary'>DRY</em>, así como también patrones de diseño y arquitectura."
+    },
+    "myProjectsSection": {
+        "global": {
+            "tecnologies": "Tecnologías utilizadas",
+            "startDate": "Fecha de Inicio",
+            "endDate": "Fecha de Finalización",
+            "monthsAbbr": {
+                "1": "Ene",
+                "2": "Feb",
+                "3": "Mar",
+                "4": "Abr",
+                "5": "May",
+                "6": "Jun",
+                "7": "Jul",
+                "8": "Ago",
+                "9": "Sep",
+                "10": "Oct",
+                "11": "Nov",
+                "12": "Dic"
+            }
+        },
+        "projects": [
+            {
+                "title": "Shaolinquan Hu - Sitio Web",
+                "description": "Sitio web informativo para una escuela de artes marciales chinas. El propósito de este proyecto fue proporcionar una forma de mostrar la historia, filosofía de la escuela, además de contenido visual (imágenes y videos) que muestren las actividades que brinda y realiza la institución. También se presentan medios para comunicarse y obtener información acerca de las clases. Todo esto presentado de manera simple para los usuarios interesados."
+            },
+            {
+                "title": "Aplicación de Valor de Divisas",
+                "description": "Página web que provee información sobre la cotización en pesos argentinos ($ARS) de los principales tipos de dólares disponibles en la República Argentina. Esto se logra consumiendo la información proporcionada por una API y mostrándola en una vista HTML."
+            },
+            {
+                "title": "Plataforma de Administración Shaolinquan Hu",
+                "description": "El proyecto está compuesto por una API que proporciona operaciones CRUD para facilitar la gestión de información de alumnos, profesores y dojos de una escuela de artes marciales chinas. Además de un cliente web que consuma la API e interactúe de manera amigable con los usuarios, permitiendo registrarse y acceder para consultar, agregar, modificar y eliminar la información según su rol de usuario. El cliente web también proporciona comunicación con el usuario a través de email, notificándole cuando su solicitud de cuenta sea aceptada o rechazada."
+            }
+        ]
+    },
+    "navbar": {
+        "toggle": "Alternar navegación",
+        "languageSelector": "Selector de idioma",
+        "currentLanguage": "Idioma",
+        "englishOption": "Cambiar idioma a inglés",
+        "spanishOption": "Cambiar idioma a español",
+        "englishFlag": "Bandera de inglés",
+        "spanishFlag": "Bandera de español",
+        "english": "Inglés",
+        "spanish": "Español"
+    },
+    "contactMeSection": {
+        "intro": "Si desea ponerse en contacto, por favor complete el formulario a continuación. Le responderé lo antes posible.",
+        "alert": {
+            "title": "¡Mensaje enviado!",
+            "message": "Te responderé lo antes posible."
+        },
+        "form": {
+            "title": "Formulario de contacto",
+            "nameLabel": "Nombre",
+            "emailLabel": "Correo electrónico",
+            "messageLabel": "Mensaje",
+            "submitBtn": "Enviar",
+            "namePlaceholder": "Introduce tu nombre",
+            "emailPlaceholder": "Introduce tu correo electrónico",
+            "messagePlaceholder": "Escribe tu mensaje aquí"
+        }
+    },
+    "social": {
+        "githubAria": "Enlace a GitHub",
+        "linkedinAria": "Enlace a LinkedIn",
+        "emailAria": "Enviar correo electrónico"
+    },
+    "footer": {
+        "copyright": "&copy; 2024 Alejandro Damián Dip. Todos los derechos reservados."
+    }
+}
